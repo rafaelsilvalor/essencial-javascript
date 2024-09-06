@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Flexbox Studies</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<section class="container-header flex-container">
-  <h2 class="header-top flex-container">studying the potential of flexbox</h2>
-  <section class="section-headers" style="background-color: beige;"></section>
-  <section class="section-headers" style="background-color: darkgray;"></section>
-</section>
-
-<section class="main flex-container">
-  <section class="container-side-bar flex-container" style="background-color:#aaa;">
-    <aside class="rows-side-bar" style="background-color: aqua;">side bar</aside>
-    <footer class="footer-side-bar" style="background-color: rosybrown;">Footer side bar</footer>
-  </section>
-  <section class="container-articles flex-container" style="background-color:#bbb;">
-    <section class="rows-articles flex-container " style="background-color: aquamarineL;">
-      <p class="xx-letter">xx</p>
-      <p class="xx">trying to know if it is possible to do it this way</p>
+  <aside class="menu">
+    <section class="menu-content">
+      <h1>
+        <a href="/" aria-label="Homepage">
+        <img src="/assets/img/logo.svg" alt="Estratégia Med">
+        </a>
+      </h1>
+      <nav class="nav">
+        <ul class="roboto-light">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Diferenciais</a></li>
+          <li><a href="#">Metodologia</a></li>
+          <li><a href="#">Comparativo</a></li>
+          <li><a href="#">Corpo Docente</a></li>
+          <li><a href="#">Tire suas Dúvidas</a></li>
+        </ul>
+      </nav>
+      <button type="button">quero mudar meu futuro</button>
     </section>
-    <section class="rows-articles flex-container row-article-two" style="background-color: bisque;">
-      <p>"We cannot solve our problems with the same thinking we used when we created them."</p>
-      <p class="bold-font text-italic">Albert Einstein</p>
-    </section>
+  </aside>
+  <section class="main-content">
+    <div class="main-content">
+      <h1 class="open-sans-regular">Preparação completa para sua aprovação</h1> 
+      <p class="roboto-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis esse dolore consequatur necessitatibus eligendi alias nobis vitae</p>
+      <p class="roboto-bold">22 a 24 de maio, às 19:00</p>
+    </div>
   </section>
-</section>
-
-<footer class="footer">
-  <p>Footer</p>
-</footer>
-
 </body>
 </html>

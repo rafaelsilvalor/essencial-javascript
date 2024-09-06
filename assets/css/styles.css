@@ -1,165 +1,125 @@
 * {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
-
-}
-
-body>* {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto 0 auto;
     padding: 0;
+    margin: 0;
 }
 
-/* Style the header */
-.container-header {
-    text-transform: uppercase;
-    position: relative;
-    flex-direction: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
+html {
+    font-size: 62.5%;
 }
 
-.header-top {
-    position: absolute;
-    transform: translateX(-50%, -50%);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 30px;
-    text-align: center;
+/* Fonts */
+/*  <uniquifier>: Use a unique and descriptive class name
+     <weight>: Use a value from 200 to 800 */
+
+.manrope-uniquifier {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* uniquifier: Use a unique and descriptive class name */
+/* weight: Use a value from 300 to 800 */
+/* width: Use a value from 75 to 100 */
+
+.open-sans-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "width" 75;
+    color: #ffffff;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+}
+
+body {
+    background: #e4e0e0;
+    font-size: 1.6rem;
+}
+
+.main-content {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 13.0rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.section-width {
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.menu {
     width: 100%;
-    padding: 54px 0px;
+    background-color: #007C97;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.section-headers {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 5px;
-    height: 200px;
-    text-align: center;
-}
-
-/* Container for flexboxes */
-.flex-container {
-    display: -webkit-flex;
+.menu-content {
     display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
-.container-side-bar {
-    -webkit-flex: 0 0 30%;
-    -ms-flex: 1;
-    flex: 0 0 30%;
-    padding: 0px;
-    flex-direction: column;
-}
-
-.container-articles {
-    -webkit-flex: 0 0 70%;
-    -ms-flex: 1;
-    flex: 0 0 70%;
-    flex-direction: row;
-    -webkit-flex-direction: column;
-    height: 300px;
-}
-
-
-/* Sidebar container with 30% height */
-.rows-side-bar {
-    display: flex;
-    /* Allows content alignment inside the sidebar */
+    height: 100px;
+    justify-content: space-between;
     align-items: center;
-    /* Centers content vertically */
-    justify-content: center;
-    /* Centers content horizontally */
-    flex: 0 0 90%;
-    /* Fixes the height to 30% of the main container */
-    padding: 0px;
+    max-width: 1230px;
+    margin: 0 auto;
 }
 
-/* Articles container with 70% height */
-.footer-side-bar {
+.main+section {}
+
+.nav {
     display: flex;
-    /* Allows content alignment inside the articles section */
-    align-items: center;
-    /* Centers content vertically */
-    justify-content: center;
-    /* Centers content horizontally */
-    flex: 0 0 10%;
-    /* Fixes the height to 70% of the main container */
-}
-
-.rows-articles {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 10px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.row-article-two {
-    flex-direction: column;
-}
-
-.xx {
+.menu ul {
     display: flex;
-    text-transform: uppercase;
-    height: 50px;
-    font-size: 19.5px;
-    vertical-align: middle;
-    width: 320px;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 680px;
 }
 
-.text-italic {
-    font-style: italic;
+.menu ul li a {
+    display: block;
 }
 
-.bold-font {
-    font-weight: bold;
-}
-
-.row-article-two p {
-    text-align: center;
-    width: 300px;
-    padding: 5px;
-}
-
-.xx-letter {
-    text-transform: uppercase;
-    display: flex;
-    font-size: 50px;
-    float: left;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Style the footer */
-.footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-}
-
-footer>p {
-    display: flex;
-    justify-content: center;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .flex-container {
-        -webkit-flex-direction: column;
-        flex-direction: column;
-    }
+a {
+    text-decoration: none;
+    color: #ffffff;
 }
