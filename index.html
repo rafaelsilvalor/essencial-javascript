@@ -4,37 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/reset-styles.css">
+  <link rel="stylesheet" href="assets/css/menu-styles.css">
+  <link rel="stylesheet" href="assets/css/home-styles.css">
+  <link rel="stylesheet" href="assets/css/diferenciais-styles.css">
+  <link rel="stylesheet" href="assets/css/metodologia-styles.css">
+  <link rel="stylesheet" href="assets/css/comparativo-styles.css">
+  <link rel="stylesheet" href="assets/css/corpo-docente-styles.css">
+  <link rel="stylesheet" href="assets/css/tire-duvidas-styles.css">
+  <link rel="stylesheet" href="assets/css/global-styles.css">
+  <link rel="stylesheet" href="assets/css/animation-styles.css">
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="assets/css/fonts-styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Animated blurred spheres -->
+  <div class="sphere-container">
+      <div class="sphere sphere1"></div>
+      <div class="sphere sphere2"></div>
+      <div class="sphere sphere3"></div>
+  </div>
   <aside class="menu">
-    <section class="menu-content">
+    <section class="menu-content flex">
       <h1>
         <a href="/" aria-label="Homepage">
         <img src="/assets/img/logo.svg" alt="Estratégia Med">
         </a>
       </h1>
-      <nav class="nav">
+      <nav class="nav flex">
         <ul class="roboto-light">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Diferenciais</a></li>
-          <li><a href="#">Metodologia</a></li>
-          <li><a href="#">Comparativo</a></li>
-          <li><a href="#">Corpo Docente</a></li>
-          <li><a href="#">Tire suas Dúvidas</a></li>
+          <li><a href="#" class="animated-link">Home</a></li>
+          <li><a href="#" class="animated-link">Diferenciais</a></li>
+          <li><a href="#" class="animated-link">Metodologia</a></li>
+          <li><a href="#" class="animated-link">Comparativo</a></li>
+          <li><a href="#" class="animated-link">Corpo Docente</a></li>
+          <li><a href="#" class="animated-link">Tire suas Dúvidas</a></li>
         </ul>
       </nav>
-      <button type="button">quero mudar meu futuro</button>
+      <button type="button" class="button-style">quero mudar meu futuro</button>
     </section>
   </aside>
-  <section class="main-content">
-    <div class="main-content">
-      <h1 class="open-sans-regular">Preparação completa para sua aprovação</h1> 
-      <p class="roboto-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis esse dolore consequatur necessitatibus eligendi alias nobis vitae</p>
-      <p class="roboto-bold">22 a 24 de maio, às 19:00</p>
+  <section class="main-content section-home flex">
+    <!-- Content of the section -->
+    <div class="section-home-one flex">
+      <h1 class="open-sans-regular-40 padding-down-30 header-home">Preparação completa para sua aprovação</h1> 
+      <p class="desc-home roboto-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+      <p class="date-home roboto-bold">22 a 24 de maio, às 19:00</p>
+      <div class="input-container flex">
+        <input type="text" name="Nome" id="input-name" placeholder="Nome">
+        <input type="email" name="email" id="input-email" placeholder="E-mail">
+      </div>
+      <button type="button" class="button-home">quero mudar meu futuro</button>
+    </div>
+    <div class="section-home-two">
+      <img src="assets/img/rplusmed.svg" alt="R+ Estratégia Med cuidando do seu futuro.">
     </div>
   </section>
 </body>
