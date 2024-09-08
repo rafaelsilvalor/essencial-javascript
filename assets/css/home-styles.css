@@ -1,0 +1,89 @@
+.section-home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.sphere-container {
+    position: relative;
+    width: 100%;
+    /* Adjust as needed to control the animation area */
+    height: 100%;
+}
+
+/* .section-home::before {
+    width: 100%;
+    height: 10rem;
+    display: block;
+    content: "";
+} */
+
+.section-home-one {
+    flex-direction: column;
+    max-width: 40.6rem;
+}
+
+.section-home-two {
+    padding: 0 20rem;
+}
+
+.section-home-one+h1 {
+    height: 11rem;
+}
+
+.padding-down-30 {
+    padding: 30px;
+}
+
+p.desc-home {
+    line-height: 150%;
+}
+
+p.date-home {
+    padding: 3rem 0;
+}
+
+.input-container {
+    flex-direction: column;
+}
+
+.input-container input {
+    width: 100%;
+    height: 5.7rem;
+    border: 0.2rem solid #26dac6;
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 1.3rem;
+}
+
+.input-container input::placeholder {
+    padding-left: 1.3rem;
+    color: #fff;
+    /* Change to desired color */
+    opacity: 1;
+    /* Optional: Adjust opacity for better visibility */
+}
+
+
+button.button-home {
+    width: 100%;
+    height: 5.7rem;
+    font-family: 'Circular Std Bold', sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #007C97;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: 0.2rem solid #007C97;
+}
+
+.input-container button:hover {
+    color: #ffffff;
+}

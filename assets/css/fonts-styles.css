@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Circular Std Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black'), url('../fonts/circular-std/CircularStd-Black.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Book'), url('../fonts/circular-std/CircularStd-Book.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Medium'), url('../fonts/circular-std/CircularStd-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Std Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black Italic'), url('../fonts/circular-std/CircularStd-BlackItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Bold'), url('../fonts/circular-std/CircularStd-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Std Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Bold Italic'), url('../fonts/circular-std/CircularStd-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Std Book Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Book Italic'), url('../fonts/circular-std/CircularStd-BookItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Circular Std Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Medium Italic'), url('../fonts/circular-std/CircularStd-MediumItalic.woff') format('woff');
+}
+
+/* Fonts */
+/*  <uniquifier>: Use a unique and descriptive class name
+     <weight>: Use a value from 200 to 800 */
+
+input[type="text"] {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: medium;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+
+/* uniquifier: Use a unique and descriptive class name */
+/* weight: Use a value from 300 to 800 */
+/* width: Use a value from 75 to 100 */
+
+.open-sans-regular-40 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 4rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    padding: 3rem 0;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+}

@@ -1,0 +1,142 @@
+a.animated-link {
+    padding: 0 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    white-space: nowrap;
+    position: relative;
+}
+
+a.animated-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 80%;
+    height: 1.9rem;
+    opacity: 0.4;
+    background-color: #26dac6;
+    transform-origin: left;
+    transform: translateX(-50%) scaleX(0);
+    transform: transform 0.5s ease;
+}
+
+a.animated-link:hover::after {
+    animation: draw-underline 0.5s ease forwards, change-thickness 0.5s ease 0.5s forwards, change-opacity 0.5s ease 0.5s forwards, offset-underline 0.5s ease 0.5s forwards;
+}
+
+@keyframes draw-underline {
+    0% {
+        transform: translateX(-50%) scaleX(0);
+    }
+
+    100% {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+
+@keyframes change-thickness {
+    0% {
+        height: 1.9rem;
+    }
+
+    100% {
+        height: 0.2rem;
+    }
+}
+
+@keyframes change-opacity {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes offset-underline {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: -1.7rem;
+    }
+}
+
+.sphere {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.7;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.sphere1 {
+    width: 200px;
+    height: 200px;
+    background-color: #ff6f91;
+    /* Pinkish-red color */
+    animation-name: moveSphere1;
+}
+
+.sphere2 {
+    width: 1000px;
+    height: 1000px;
+    background-color: #47c1cc;
+    /* blue color */
+    animation-name: moveSphere2;
+}
+
+.sphere3 {
+    width: 180px;
+    height: 180px;
+    background-color: #7885ca;
+    /* Light blue color */
+    animation-name: moveSphere3;
+}
+
+@keyframes moveSphere1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(200px, 300px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveSphere2 {
+    0% {
+        transform: translate(300px, -200px);
+    }
+
+    50% {
+        transform: translate(300px, 100px);
+    }
+
+    100% {
+        transform: translate(300px, -200px);
+    }
+}
+
+@keyframes moveSphere3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(250px, -150px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

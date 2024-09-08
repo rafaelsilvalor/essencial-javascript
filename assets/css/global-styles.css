@@ -1,0 +1,8 @@
+.main-content {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
